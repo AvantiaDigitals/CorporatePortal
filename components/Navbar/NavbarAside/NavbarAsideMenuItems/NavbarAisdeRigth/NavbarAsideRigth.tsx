@@ -7,14 +7,11 @@ import {
   faBuilding,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useTheme } from "next-themes";
 
 import { ParamsNabvarMenu } from "@/components/Navbar/NavbarMenu/NavbarMenu";
 import styles from "@/components/Navbar/NavbarAside/NavbarAsideMenuItems/NavbarAisdeRigth/NavbarAsideRigth.module.css";
 
 const NavbarAsideRigth: React.FC<ParamsNabvarMenu> = ({ showMenu }) => {
-  const { theme } = useTheme();
-
   return (
     <div className={styles.asideDesk}>
       <div
@@ -60,28 +57,28 @@ const NavbarAsideRigth: React.FC<ParamsNabvarMenu> = ({ showMenu }) => {
                 <FontAwesomeIcon
                   icon={["fab", "facebook"]}
                   size="lg"
-                  style={{ color: theme == "dark" ? "#fff" : "#000" }}
+                  style={{ color: "#fff" }}
                 />
               </div>
               <div className={styles.containerSocialIcon}>
                 <FontAwesomeIcon
                   icon={["fab", "twitter"]}
                   size="lg"
-                  style={{ color: theme == "dark" ? "#fff" : "#000" }}
+                  style={{ color: "#fff" }}
                 />
               </div>
               <div className={styles.containerSocialIcon}>
                 <FontAwesomeIcon
                   icon={["fab", "github"]}
                   size="lg"
-                  style={{ color: theme == "dark" ? "#fff" : "#000" }}
+                  style={{ color: "#fff" }}
                 />
               </div>
               <div className={styles.containerSocialIcon}>
                 <FontAwesomeIcon
                   icon={["fab", "linkedin"]}
                   size="lg"
-                  style={{ color: theme == "dark" ? "#fff" : "#000" }}
+                  style={{ color: "#fff" }}
                 />
               </div>
             </div>
