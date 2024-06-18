@@ -1,0 +1,9 @@
+.switch{
+  position: fixed;
+  left: 35px;
+  top: 50%;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  cursor: pointer;
+  z-index: 3;
+}

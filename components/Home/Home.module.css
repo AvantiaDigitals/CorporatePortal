@@ -1,0 +1,9 @@
+.firstSecctionLigth{
+  background-color: var(--background-color-light);
+  height: 100vh;
+}
+
+.firstSecctionDark{
+  background-color: var(--background-color-dark);
+  height: 100vh;
+}

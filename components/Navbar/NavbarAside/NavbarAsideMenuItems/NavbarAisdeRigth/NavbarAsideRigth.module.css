@@ -1,0 +1,278 @@
+.asideDesk{
+  display: none;
+}
+
+.buttonClose{
+  cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .asideDesk{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 12%;
+    padding-right: 10%;
+  }
+
+  .search{
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    height: 200px;
+  }
+
+  .buttons{
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .links{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+  }
+
+  .link{
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .link:hover{
+    cursor: pointer;
+  }
+
+  .contactInfo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .info>p{
+    margin-top: 10px;
+  }
+
+  .subTitle{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .socialBox{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socialButtons{
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    margin-top: 15px;
+  }
+
+  .containerSocialIcon{
+    background-color: #000248;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px;
+    transition: background-color 1s ease, color 1s ease;
+  }
+
+  .containerSocialIcon:hover{
+    background-color: var(--select-option-menu);
+    cursor: pointer;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .asideDesk{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 12%;
+    padding-right: 10%;
+  }
+
+  .search{
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    height: 200px;
+  }
+
+  .buttons{
+    display: flex;
+    margin-top: 28px;
+  }
+
+  .links{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+  }
+
+  .link{
+    font-size: 34px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .link:hover{
+    cursor: pointer;
+  }
+
+  .contactInfo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .info>p{
+    margin-top: 10px;
+  }
+
+  .subTitle{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .socialBox{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socialButtons{
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    margin-top: 15px;
+  }
+
+  .containerSocialIcon{
+    background-color: #000248;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px;
+    transition: background-color 1s ease, color 1s ease;
+  }
+
+  .containerSocialIcon:hover{
+    background-color: var(--select-option-menu);
+    cursor: pointer;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+  .asideDesk{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 12%;
+    padding-right: 10%;
+  }
+
+  .search{
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    height: 200px;
+  }
+
+  .buttons{
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .links{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+  }
+
+  .link{
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .link:hover{
+    cursor: pointer;
+  }
+
+  .contactInfo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .info>p{
+    margin-top: 10px;
+  }
+
+  .subTitle{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .socialBox{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socialButtons{
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    margin-top: 15px;
+  }
+
+  .containerSocialIcon{
+    background-color: #000248;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px;
+    transition: background-color 1s ease, color 1s ease;
+  }
+
+  .containerSocialIcon:hover{
+    background-color: var(--select-option-menu);
+    cursor: pointer;
+  }
+}

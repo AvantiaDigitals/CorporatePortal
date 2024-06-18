@@ -1,0 +1,95 @@
+.menu{
+  z-index: 3;
+  width: 387px;
+  background-color: var(--background-color-dark);
+  position: fixed;
+  overflow-y: auto;
+  height: 100%;
+  left: -387px;
+  transition: left 0.5s ease;
+}
+
+.show{
+  left: 0;
+}
+
+.light{
+  background-color: black;
+}
+
+.dark{
+  background-color: black;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .menu{
+    left: unset;
+    right: -60%;
+    transition: right 0.5s ease;
+    width: 60%;
+  }
+
+  .show{
+    right: 0;
+    left: unset;
+  }
+
+  .light{
+    background-color: white;
+  }
+
+  .dark{
+    background-color: var(--background-color-dark);
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .menu{
+    left: unset;
+    right: -60%;
+    transition: right 0.5s ease;
+    width: 60%;
+  }
+
+  .show{
+    right: 0;
+    left: unset;
+  }
+
+  .light{
+    background-color: white;
+  }
+
+  .dark{
+    background-color: var(--background-color-dark);
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+  .menu{
+    left: unset;
+    right: -60%;
+    transition: right 0.5s ease;
+    width: 60%;
+  }
+
+  .show{
+    right: 0;
+    left: unset;
+  }
+
+  .light{
+    background-color: white;
+  }
+
+  .dark{
+    background-color: var(--background-color-dark);
+  }
+}
