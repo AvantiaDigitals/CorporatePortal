@@ -2,22 +2,3 @@
   display: flex;
   flex-direction: column;
 }
-
-.overlay{
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0, 0, 0, .4);
-  visibility: hidden;
-  opacity: 0;
-  backdrop-filter: blur(6px);
-  transition: 0.3s;
-}
-
-.open .overlay{
-  visibility: visible;
-  opacity: 1;
-}
