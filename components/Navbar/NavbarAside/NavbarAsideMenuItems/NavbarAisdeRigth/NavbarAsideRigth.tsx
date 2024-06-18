@@ -7,11 +7,14 @@ import {
   faBuilding,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTheme } from "next-themes";
 
 import { ParamsNabvarMenu } from "@/components/Navbar/NavbarMenu/NavbarMenu";
 import styles from "@/components/Navbar/NavbarAside/NavbarAsideMenuItems/NavbarAisdeRigth/NavbarAsideRigth.module.css";
 
 const NavbarAsideRigth: React.FC<ParamsNabvarMenu> = ({ showMenu }) => {
+  const { theme } = useTheme();
+
   return (
     <div className={styles.asideDesk}>
       <div
@@ -54,16 +57,32 @@ const NavbarAsideRigth: React.FC<ParamsNabvarMenu> = ({ showMenu }) => {
             <span className={styles.subTitle}>Find us here</span>
             <div className={styles.socialButtons}>
               <div className={styles.containerSocialIcon}>
-                <FontAwesomeIcon icon={["fab", "facebook"]} size="lg" />
+                <FontAwesomeIcon
+                  icon={["fab", "facebook"]}
+                  size="lg"
+                  style={{ color: theme == "dark" ? "#fff" : "#000" }}
+                />
               </div>
               <div className={styles.containerSocialIcon}>
-                <FontAwesomeIcon icon={["fab", "twitter"]} size="lg" />
+                <FontAwesomeIcon
+                  icon={["fab", "twitter"]}
+                  size="lg"
+                  style={{ color: theme == "dark" ? "#fff" : "#000" }}
+                />
               </div>
               <div className={styles.containerSocialIcon}>
-                <FontAwesomeIcon icon={["fab", "github"]} size="lg" />
+                <FontAwesomeIcon
+                  icon={["fab", "github"]}
+                  size="lg"
+                  style={{ color: theme == "dark" ? "#fff" : "#000" }}
+                />
               </div>
               <div className={styles.containerSocialIcon}>
-                <FontAwesomeIcon icon={["fab", "linkedin"]} size="lg" />
+                <FontAwesomeIcon
+                  icon={["fab", "linkedin"]}
+                  size="lg"
+                  style={{ color: theme == "dark" ? "#fff" : "#000" }}
+                />
               </div>
             </div>
           </div>

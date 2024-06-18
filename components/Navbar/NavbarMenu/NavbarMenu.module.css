@@ -13,7 +13,6 @@
   transition: all 0.3s ease-in-out;
   position: absolute;
   padding-top: 20px;
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1);
 }
 
 .positionLigth{
@@ -22,6 +21,7 @@
   height: 80px;
   padding-top: 0;
   animation:downMenu 1.5s;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1);
 }
 
 .positionBlack{
@@ -30,6 +30,7 @@
   height: 80px;
   padding-top: 0;
   animation:downMenu 1.5s;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1);
 }
 
 @keyframes downMenu{
