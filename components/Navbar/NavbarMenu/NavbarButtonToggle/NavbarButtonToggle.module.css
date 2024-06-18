@@ -1,0 +1,200 @@
+.buttonLight{
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonLight::before,.buttonLight::after{
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: black;
+  width: 25px;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.buttonLight::before{
+  top: 35%;
+}
+.buttonLight::after{
+  top: 63%;
+}
+
+.buttonDark{
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonDark::before,.buttonDark::after{
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 25px;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.buttonDark::before{
+  top: 35%;
+}
+.buttonDark::after{
+  top: 63%;
+}
+
+.lineLight{
+  background-color: black;
+  width: 25px;
+  height: 2px;
+}
+
+.lineDark{
+  background-color: white;
+  width: 25px;
+  height: 2px;
+}
+
+.buttonLight:hover{
+  cursor: pointer;
+}
+
+.buttonLight:hover::before, .buttonLight:hover::after{
+  width: 15px;
+}
+
+.buttonDark:hover{
+  cursor: pointer;
+}
+
+.buttonDark:hover::before, .buttonDark:hover::after{
+  width: 15px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .buttonLight{
+    background-color: white;
+    border-radius: 100%;
+  }
+
+  .buttonLight::before,.buttonLight::after{
+    background-color: black;
+  }
+
+  .buttonLight::after{
+    width: 18px;
+    right: 18px;
+  }
+
+  .buttonLight:hover::before{
+    width: 25px;
+  }
+  
+  .buttonLight:hover::after{
+    width: 18px;
+  }
+
+  .buttonLight::before,.buttonLight::after{
+    background-color: black;
+  }
+
+  .buttonDark{
+    background-color:#18191a;
+    border-radius: 100%;
+  }
+
+  .buttonDark::before,.buttonDark::after{
+    background-color: black;
+  }
+
+  .buttonDark::after{
+    width: 18px;
+    right: 18px;
+  }
+
+  .buttonDark:hover::before{
+    width: 25px;
+  }
+  
+  .buttonDark:hover::after{
+    width: 18px;
+  }
+
+  .buttonDark::before,.buttonDark::after{
+    background-color: white;
+  }
+
+  .lineLight{
+    background-color: black;
+  }
+
+  .lineDark{
+    background-color: white;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .buttonLight::before,.buttonLight::after{
+    background-color: white;
+  }
+
+  .buttonLight::after{
+    width: 18px;
+    right: 18px;
+  }
+
+  .buttonLight:hover::before{
+    width: 25px;
+  }
+  
+  .buttonLight:hover::after{
+    width: 18px;
+  }
+
+  .buttonLight::before,.buttonLight::after{
+    background-color: black;
+  }
+
+
+  .buttonDark::before,.buttonDark::after{
+    background-color: black;
+  }
+
+  .buttonDark::after{
+    width: 18px;
+    right: 18px;
+  }
+
+  .buttonDark:hover::before{
+    width: 25px;
+  }
+  
+  .buttonDark:hover::after{
+    width: 18px;
+  }
+  
+  .buttonDark::before,.buttonDark::after{
+    background-color: white;
+  }
+
+  .lineLight{
+    background-color: black;
+  }
+
+  .lineDark{
+    background-color: white;
+  }
+}
