@@ -6,15 +6,17 @@ import styles from "@/components/ButtonAnimate/Background/ButtonAnimateBackgound
 
 interface ParamsButtonAnimateBackgound {
   text: string;
+  style?: string;
   src?: string;
 }
 
 const ButtonAnimateBackgound: React.FC<ParamsButtonAnimateBackgound> = ({
   text,
+  style,
 }) => {
   return (
     <button
-      className={`${styles.button} ${styles.buttonLarge} ${styles.buttonTransparent}`}
+      className={`${styles.button} ${styles.buttonLarge} ${styles.buttonTransparent} ${style == "dark" ? styles.dark : ""}`}
     >
       <span className={styles.text}>{text}</span>
       <FontAwesomeIcon icon={faCaretRight} size="xs" />

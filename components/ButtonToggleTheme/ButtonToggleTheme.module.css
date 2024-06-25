@@ -5,5 +5,5 @@
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   cursor: pointer;
-  z-index: 3;
+  z-index: 4;
 }

@@ -13,6 +13,7 @@
   transition: all 0.3s ease-in-out;
   position: absolute;
   padding-top: 20px;
+  z-index: 2;
 }
 
 .positionLigth{
