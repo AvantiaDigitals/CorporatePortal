@@ -1,5 +1,5 @@
 .menu{
-  z-index: 3;
+  z-index: 4;
   width: 387px;
   background-color: var(--background-color-dark);
   position: fixed;
