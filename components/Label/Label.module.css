@@ -1,0 +1,11 @@
+.label{
+  font-size: 15px;
+  line-height: 35px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.green{
+  color: #00d09c;
+  background-color: rgba(0,208,156,.1);
+}
