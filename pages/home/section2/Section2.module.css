@@ -1,0 +1,195 @@
+.section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.secctionDark{
+  background-color: var(--background-color-dark-second);
+}
+
+.secctionLigth{
+  background-color: white;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle{
+  margin: 15px 0;
+  font-size: 29px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.textSubtitle{
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 25px;
+  place-items: center;
+}
+
+.colorDark{
+  color: var(--text-color-light);
+}
+
+.colorLigth{
+  color: black;
+}
+
+/* Colores para las cards [Balls] */
+.iconInner1{
+  background: #702fff;
+}
+
+.iconInner2{
+  background: #5bcc9f;
+}
+
+.iconInner3{
+  background: #49ccff;
+}
+
+.iconInner4{
+  background: #ffcd3e;
+}
+
+.iconInner5{
+  background: #007aff;
+}
+
+.iconInner6{
+  background: #ff8a5b;
+}
+
+/* Colores para las cards [Sheets] */
+.icon1::before{
+  background: linear-gradient(180deg, #ebfffd, #efeefa);
+}
+
+.icon2::before{
+  background: linear-gradient(180deg,#fef7e2,#eeeefd);
+}
+
+.icon3::before{
+  background: linear-gradient(134.74deg,#d6fffc,#fae7e4);
+}
+
+.icon4::before{
+  background: linear-gradient(180deg,#f7f6ff,#feefeb);
+}
+
+.icon5::before{
+  background: linear-gradient(180deg,#ebfffd,#efeefa);
+}
+
+.icon6::before{
+  background: linear-gradient(180deg,#f7f6ff,#feefeb);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 25px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 60px;
+  }
+
+  .subtitle{
+    font-size: 35px;
+    line-height: 42px;
+  }
+  
+  .textSubtitle{
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0 15%;
+    margin-bottom: 70px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container{
+    max-width: 900px;
+    padding: 100px 30px;
+  }
+
+  .subtitle{
+    font-size: 40px;
+    line-height: 52px;
+  }
+  
+  .textSubtitle{
+    font-size: 20px;
+    line-height: 32px;
+    padding: 0 15%;
+    margin-bottom: 70px;
+  }
+
+  .cards{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 60px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container{
+    max-width: 1100px;
+  }
+
+  .subtitle{
+    font-size: 50px;
+    line-height: 62px;
+  }
+
+  .textSubtitle{
+    padding: 0 25%;
+  }
+
+  .cards{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 60px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+  .container{
+    max-width: 1250px;
+  }
+}
