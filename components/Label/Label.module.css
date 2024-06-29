@@ -3,9 +3,19 @@
   line-height: 35px;
   padding: 10px 15px;
   text-align: center;
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .green{
   color: #00d09c;
   background-color: rgba(0,208,156,.1);
+}
+
+.blue{
+  color: #00cfff;
+  background-color: rgba(0, 207, 255, .1);
 }

@@ -142,3 +142,12 @@
     max-width: 1250px;
   }
 }
+
+
+
+/* Rango de altura */
+@media (min-height: 696px) {
+  .container{
+    height: 100vh;
+  }
+}
