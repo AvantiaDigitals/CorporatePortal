@@ -1,9 +1,10 @@
 .section{
   display: flex;
+  justify-content: center;
 }
 
 .secctionLigth{
-  background-color: var(--background-color-light);
+  background-color: #fafafb;
 }
 
 .secctionDark{
@@ -13,9 +14,9 @@
 .container{
   display: flex;
   flex-direction: column;
-  padding-bottom: 120px;
-  padding-top: 85px;
+  padding: 50px 50px 20px 50px;
   justify-content: center;
+  width: 100%;
 }
 
 .dark{
@@ -32,6 +33,7 @@
 @media only screen and (min-width: 992px) {
   .container{
     max-width: 900px;
+    padding: 120px 50px 100px 50px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
