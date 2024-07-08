@@ -9,6 +9,8 @@
 }
 
 .image{
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -122,6 +124,7 @@
   }
 
   .image{
+    display: inherit;
     width: 50%;
   }
   
