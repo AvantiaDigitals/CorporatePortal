@@ -4,7 +4,13 @@ import React, { useRef } from "react";
 
 import styles from "@/components/Component3D/Component3D.module.css";
 
-export const Component3D = ({ children }: { children: React.ReactNode }) => {
+export const Component3D = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
   const imageRef = useRef<HTMLImageElement>(null);
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -28,7 +34,7 @@ export const Component3D = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div
-      className={styles.container}
+      className={`${styles.container} ${className}`}
       onMouseLeave={handleMouseLeave}
       onMouseMove={handleMouseMove}
     >
