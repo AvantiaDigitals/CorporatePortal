@@ -22,11 +22,10 @@
 
 .gridContainer{
   padding: 20px;
-  max-width: 1200px;
-  width: 100%;
+  padding-top: 50px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
   grid-column-gap: 30px;
   grid-row-gap: 10px;
 }
@@ -37,9 +36,6 @@
 @media only screen and (min-width: 600px) {
   .gridContainer{
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 10px;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -72,9 +68,6 @@
 
   .gridContainer{
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 10px;
   }
 
   .buttons{

@@ -62,11 +62,11 @@
   text-align: center;
 }
 
-.dark{
+.dark.button::after{
   background: #18191a;
 }
 
-.ligth{
+.ligth.button::after{
   background-color: white;
 }
 /* Extra small devices (phones, 600px and down) */
