@@ -1,0 +1,173 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: .3s;
+  margin-top: 30px;
+}
+
+.selectedDark{
+  background-color: #18191a;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+}
+
+.titels{
+  display: flex;
+  flex-direction: column;
+}
+
+.image{
+  width: 60px;
+}
+
+.name{
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.jobTitle{
+  color: #919191;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.description{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.descriptionLigth{
+  color: #52526c;
+}
+
+.link{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 10px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.link::after{
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  content: "";
+  background: white;
+  left: 0;
+  transition: .5s;
+}
+
+.selectedDark>.link{
+  color: #702fff;
+}
+
+.selectedDark>.link::after{
+  width: 100%;
+  background: #702fff;
+}
+
+.selected>.link{
+  color: #702fff;
+}
+
+.selected>.link::after{
+  width: 100%;
+  background: #702fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card{
+    padding: 30px;
+  }
+
+  .image{
+    width: 60px;
+    height: 60px;
+  }
+
+  .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .titels{
+    margin-left: 30px;
+  }
+
+  .name{
+    line-height: 32px;
+    font-size: 26px;
+  }
+  
+  .jobTitle{
+    line-height: 28px;
+    font-size: 18px;
+  }
+  
+  .description{
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card:nth-child(2){
+    margin-left: 30px;
+  }
+
+  .header{
+    margin-bottom: 20px;
+  }
+
+  .name{
+    font-size: 20px;
+  }
+  
+  .jobTitle{
+    font-size: 16px;
+  }
+
+  .description{
+    margin-bottom: 40px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .name{
+    font-size: 26px;
+  }
+  
+  .jobTitle{
+    font-size: 18px;
+  }
+
+  .description{
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {}

@@ -14,7 +14,7 @@ import Counter from "@/components/Counter/Counter";
 import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
 import styles from "@/pages/home/section6/Section6.module.css";
 
-export function SixhSection() {
+export function SixthSection() {
   const TIME_COUNTER: number = 1500;
   const { theme } = useTheme();
 
