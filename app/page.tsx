@@ -11,6 +11,7 @@ import { FifthSection } from "@/pages/home/section5/Section5";
 import { SixthSection } from "@/pages/home/section6/Section6";
 import { SeventhSection } from "@/pages/home/section7/Section7";
 import { EighthSection } from "@/pages/home/section8/Section8";
+import { NinethSection } from "@/pages/home/section9/Section9";
 library.add(fab);
 dom.watch();
 
@@ -25,6 +26,7 @@ export default function Home() {
       <SixthSection />
       <SeventhSection />
       <EighthSection />
+      <NinethSection />
     </>
   );
 }
