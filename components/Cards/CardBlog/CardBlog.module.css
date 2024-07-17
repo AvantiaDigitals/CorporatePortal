@@ -1,0 +1,112 @@
+.cardBlog{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  position: relative;
+  transition: .4s;
+  box-shadow: #9f9f9f 0px 5px 10px 0px;
+}
+
+.cardBlogDark{
+  box-shadow: none;
+}
+
+.containerText{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  transition: all .5s;
+  height: 100%;
+}
+
+.containerTextDark{
+  background-color: #18191a;
+}
+
+.containerTextLigth{
+ background-color: white;
+}
+
+
+.tag{
+  background: #5bcc9f;
+  font-size: 15px;
+  color: #f6f5fa;
+  padding: 0 10px;
+  line-height: 26px;
+  font-weight: 400;
+  width: fit-content;
+}
+
+.titleCard{
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 15px 0;
+  transition: all .5s;
+  cursor: pointer;
+
+  overflow: hidden;           /* Oculta el desbordamiento del contenido */
+  display: -webkit-box;       /* Soporte para el modelo de caja flexible */
+  -webkit-box-orient: vertical; /* Orientación vertical */
+  -webkit-line-clamp: 3;      /* Número de líneas a mostrar antes de truncar */
+  line-clamp: 3;              /* Esto es para navegadores que soportan esta propiedad */
+}
+
+.description{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.cardBlog:hover .containerText{
+  padding-left: 45px;
+}
+
+.cardBlog:hover .titleCard{
+  color: #6610f2;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .cardBlog{
+    margin: 0 10px;
+  }
+
+  .containerText{
+    height: auto;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .image{
+    height: 350px;
+  }
+
+  .containerText{
+    padding: 50px 30px;
+    position: absolute;
+    top: 15%;
+    left: -45px;
+    width: 90%;
+  }
+
+  .titleCard{
+    white-space: nowrap;    /* Evita que el texto se divida en varias líneas */
+    overflow: hidden;       /* Oculta el desbordamiento del contenido */
+    text-overflow: ellipsis;/* Muestra los puntos suspensivos (...) */
+  }
+
+  .description{
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {}

@@ -16,7 +16,7 @@
 .container{
   display: flex;
   flex-direction: column;
-  padding: 130px 50px;
+  padding: 50px 50px 50px 50px;
 }
 
 .label{
@@ -39,14 +39,15 @@
 @media only screen and (min-width: 600px) {}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  /* .container{
-    padding: 50px 50px 20px 50px;
-  } */
+  .container{
+    padding: 80px 100px 50px 100px;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .container{
     max-width: 900px;
+    padding: 120px 50px 100px 50px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
