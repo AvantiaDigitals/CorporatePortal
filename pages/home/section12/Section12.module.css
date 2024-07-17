@@ -46,6 +46,11 @@
   font-size: 15px;
   line-height: 26px;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.number:hover{
+  color: #7a19ff;
 }
 
 /* Extra small devices (phones, 600px and down) */
