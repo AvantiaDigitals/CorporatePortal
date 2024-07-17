@@ -4,7 +4,7 @@
 }
 
 .secctionLigth{
-  background-color: white;
+  background-color: #fafafb;
   color: #000248;
 }
 
@@ -14,27 +14,25 @@
 }
 
 .container{
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 50px 50px 50px 50px;
+  width: 100%;
 }
 
 .topContainer{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.label{
-  color: #7a19ff;
-  background: rgba(122, 25, 255, .1);
 }
 
 .title{
   font-size: 30px;
   line-height: 40px;
   font-weight: 700;
-  margin: 15px;
+  margin: 10px 0;
   text-align: center;
 }
 
@@ -45,15 +43,17 @@
   text-align: center;
 }
 
-.bottomContainer{
+.downContainer{
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
+  z-index: 0;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600) {}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .container{
@@ -61,6 +61,7 @@
   }
 
   .title{
+    margin-bottom: 15px;
     font-size: 35px;
     line-height: 42px;
   }
@@ -69,11 +70,16 @@
     font-size: 18px;
     line-height: 28px;
   }
+
+  .downContainer{
+    flex-direction: row;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .container{
     max-width: 900px;
+    align-items: center;
     padding: 120px 50px 100px 50px;
   }
 
@@ -85,12 +91,6 @@
   .text{
     font-size: 20px;
     line-height: 32px;
-  }
-
-  .bottomContainer{
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */

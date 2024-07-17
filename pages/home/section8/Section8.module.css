@@ -16,7 +16,7 @@
 .container{
   display: flex;
   flex-direction: column;
-  padding: 80px 50px;
+  padding: 50px 50px 50px 50px;
 }
 
 .topContainer{
@@ -132,6 +132,10 @@
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .container{
+    padding: 80px 100px 50px 100px;
+  }
+
   .count{
     right: 38%;
   }
@@ -156,6 +160,7 @@
   .container{
     max-width: 900px;
     flex-direction: row;
+    padding: 120px 50px 100px 50px;
   }
 
   .topContainer{
