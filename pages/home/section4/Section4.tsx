@@ -29,21 +29,25 @@ export function FourthSection() {
               We do design, code & develop.
             </h2>
           </ScrollComponent>
-          <p className={`${theme == "dark" ? styles.dark : styles.light}`}>
-            <ScrollComponent>
+          <ScrollComponent>
+            <p
+              className={`${styles.paragraph} ${theme == "dark" ? styles.dark : styles.light}`}
+            >
               Nulla et velit gravida, facilisis quam a, molestie ante. Mauris
               placerat suscipit dui, eget maximus tellus blandit a. Praesent non
               tellus sed ligula commodo blandit in et mauris. Quisque efficitur
               ipsum ut dolor molestie pellentesque.
-            </ScrollComponent>
-          </p>
-          <p className={`${theme == "dark" ? styles.dark : styles.light}`}>
-            <ScrollComponent>
+            </p>
+          </ScrollComponent>
+          <ScrollComponent>
+            <p
+              className={`${styles.paragraph} ${theme == "dark" ? styles.dark : styles.light}`}
+            >
               Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a
               venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim
               eget libero.
-            </ScrollComponent>
-          </p>
+            </p>
+          </ScrollComponent>
         </div>
         <div className={styles.rightContent}>
           <div
