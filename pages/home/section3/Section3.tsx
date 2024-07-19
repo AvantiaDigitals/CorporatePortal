@@ -15,7 +15,7 @@ import image2 from "@/public/featured-image-03.jpg";
 import image3 from "@/public/featured-image-04.jpg";
 import styles from "@/pages/home/section3/Section3.module.css";
 
-export function ThirdSection() {
+export default function ThirdSection() {
   const { theme } = useTheme();
 
   const OPTIONS: EmblaOptionsType = {};

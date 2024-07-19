@@ -15,7 +15,7 @@ import CardIcon from "@/components/Cards/CardIcon/CardIcon";
 import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
 import styles from "@/pages/home/section2/Section2.module.css";
 
-export function SecondSection() {
+export default function SecondSection() {
   const { theme } = useTheme();
 
   return (

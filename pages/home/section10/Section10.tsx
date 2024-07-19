@@ -13,7 +13,7 @@ import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
 import Label from "@/components/Label/Label";
 import styles from "@/pages/home/section10/Section10.module.css";
 
-export function TenthSection() {
+export default function TenthSection() {
   const { theme } = useTheme();
 
   return (

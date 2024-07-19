@@ -9,7 +9,7 @@ import Label from "@/components/Label/Label";
 import team from "@/public/team-group.png";
 import styles from "@/pages/home/section8/Section8.module.css";
 
-export function EighthSection() {
+export default function EighthSection() {
   const { theme } = useTheme();
 
   return (

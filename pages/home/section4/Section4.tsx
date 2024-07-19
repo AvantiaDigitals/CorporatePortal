@@ -10,7 +10,7 @@ import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
 import ButtonAnimateBackgound from "@/components/ButtonAnimate/Background/ButtonAnimateBackgound";
 import styles from "@/pages/home/section4/Section4.module.css";
 
-export function FourthSection() {
+export default function FourthSection() {
   const { theme } = useTheme();
 
   return (

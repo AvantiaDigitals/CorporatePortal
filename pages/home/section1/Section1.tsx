@@ -9,7 +9,7 @@ import { Component3D } from "@/components/Component3D/Component3D";
 import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
 import styles from "@/pages/home/section1/Section1.module.css";
 
-export function FirstSection() {
+export default function FirstSection() {
   const { theme } = useTheme();
 
   return (

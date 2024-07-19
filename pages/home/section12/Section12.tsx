@@ -9,7 +9,7 @@ import ButtonAnimateBackgound from "@/components/ButtonAnimate/Background/Button
 import Label from "@/components/Label/Label";
 import styles from "@/pages/home/section12/Section12.module.css";
 
-export function TwelfthSection() {
+export default function TwelfthSection() {
   const { theme } = useTheme();
 
   return (
