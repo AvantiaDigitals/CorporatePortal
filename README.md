@@ -1,53 +1,40 @@
-# Next.js & NextUI Template
+# Portal Corporativo con Next.js y React
 
-This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).
+Este proyecto es un portal corporativo desarrollado utilizando Next.js y React. Proporciona información sobre nuestra empresa, servicios y contacto.
 
-[Try it on CodeSandbox](https://githubbox.com/nextui-org/next-app-template)
+## Características
 
-## Technologies Used
+- **Páginas estáticas y dinámicas**: Utilizamos Next.js para crear páginas estáticas y dinámicas según las necesidades.
+- **Enrutamiento**: Implementamos enrutamiento fácilmente con Next.js.
+- **Componentes reutilizables**: Creamos componentes reutilizables para mantener el código limpio y modular.
+- **Estilos con CSS Modules**: Utilizamos CSS Modules para estilizar nuestros componentes.
+- **Integración con API**: Consumimos datos de nuestra API interna para mostrar información actualizada.
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+## Estructura del proyecto
 
-## How to Use
+- `pages/`: Contiene las páginas del sitio.
+- `components/`: Aquí se encuentran los componentes reutilizables.
+- `styles/`: Archivos CSS para estilizar los componentes.
+- `public/`: Archivos estáticos como imágenes o iconos.
 
-### Use the template with create-next-app
+## Instalación
 
-To create a new project based on this template using `create-next-app`, run the following command:
+1. Clona este repositorio: `git clone https://github.com/tu-usuario/tu-proyecto.git`
+2. Instala las dependencias: `npm install`
+3. Inicia el servidor de desarrollo: `npm run dev`
 
-```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
-```
+## Contribución
 
-### Install dependencies
+Si deseas contribuir, ¡estamos abiertos a pull requests! Por favor, sigue nuestras directrices de contribución.
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+## Contacto
 
-```bash
-npm install
-```
+¿Tienes alguna pregunta o comentario? No dudes en contactarnos:
 
-### Run the development server
+- Correo electrónico: avantia.digitalis@hotmail.com
+- Sitio web: www.avantiadigitalis.com
 
-```bash
-npm run dev
-```
+---
 
-### Setup pnpm (optional)
+¡Gracias por visitar nuestro portal corporativo! Esperamos que encuentres la información que buscas. 😊
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@nextui-org/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
