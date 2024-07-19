@@ -7,7 +7,7 @@ import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
 import Label from "@/components/Label/Label";
 import styles from "@/pages/home/section9/Section9.module.css";
 
-export function NinethSection() {
+export default function NinethSection() {
   const { theme } = useTheme();
 
   const cardsPrice: ParamsCardPrice[] = [

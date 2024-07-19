@@ -9,7 +9,7 @@ import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
 import Label from "@/components/Label/Label";
 import styles from "@/pages/home/section11/Section11.module.css";
 
-export function EleventhSection() {
+export default function EleventhSection() {
   const { theme } = useTheme();
 
   const cardsBlog: ParamsCardBlog[] = [

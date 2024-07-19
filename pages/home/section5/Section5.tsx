@@ -8,7 +8,7 @@ import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
 import { GridImage } from "@/components/GridImage/GridImage";
 import styles from "@/pages/home/section5/Section5.module.css";
 
-export function FifthSection() {
+export default function FifthSection() {
   const { theme } = useTheme();
 
   return (

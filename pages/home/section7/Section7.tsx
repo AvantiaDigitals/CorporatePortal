@@ -11,7 +11,7 @@ import client2 from "@/public/client-02.jpg";
 import styles from "@/pages/home/section7/Section7.module.css";
 import { ParamsCardTestimonialOP } from "@/components/Cards/CardTestimonial/CardTestimonial";
 
-export function SeventhSection() {
+export default function SeventhSection() {
   const { theme } = useTheme();
   const [CardsInfo, setCardsInfo] = useState<ParamsCardTestimonialOP[]>([
     {
