@@ -87,10 +87,6 @@
   background-color: #702fff!important;
 }
 
-.showTop{
-  display: none;
-}
-
 .downContainer{
   display: flex;
   flex-direction: column;
@@ -101,6 +97,10 @@
   display: flex;
   flex-direction: column;
   margin: 20px 0;
+}
+
+.showTop{
+  display: none;
 }
 
 .area{
