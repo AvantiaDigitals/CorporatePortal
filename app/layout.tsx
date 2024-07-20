@@ -7,14 +7,28 @@ import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/Navbar/Navbar";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+  authors: {
+    name: siteConfig.author,
+    url: new URL(siteConfig.url).href,
+  },
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  keywords: siteConfig.keywords,
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
+  openGraph: {
+    type: "website",
+    title: siteConfig.title,
+    siteName: siteConfig.name,
+    description: siteConfig.description,
+    url: new URL(siteConfig.url).href,
+    images: new URL(siteConfig.url).href,
+  }
 };
 
 export const viewport: Viewport = {

@@ -1,8 +1,15 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
+  author: "Avantia Digitalis",
   name: "Avantia Digitalis",
-  description: "Business Site",
+  title: "Diseño y creación de páginas web",
+  description:
+    "Ofrecemos servicios profesionales de diseño y creación de páginas web. Sitios web personalizados, responsivos y optimizados para SEO. ¡Haz crecer tu negocio en línea con nosotros!",
+  keywords:
+    "diseño web, creación de páginas web, desarrollo web, páginas web personalizadas, diseño de sitios web, servicios de diseño web, diseño web profesional, diseño web responsivo, optimización SEO, AvantiaDigitalis, Avantia",
+  url: "https://avantiadigitalis.com",
+  image: "/Meta.png",
   navItems: [
     {
       id: 1,
