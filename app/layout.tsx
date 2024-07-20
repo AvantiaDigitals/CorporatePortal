@@ -33,7 +33,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="es">
       <head />
       <body>
-        <Providers themeProps={{ attribute: "class", defaultTheme: "white" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <Navbar>{children}</Navbar>
         </Providers>
       </body>
