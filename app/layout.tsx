@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     description: siteConfig.description,
     url: new URL(siteConfig.url).href,
-    images: new URL(siteConfig.url).href,
+    images: "/Meta.png",
   }
 };
 
