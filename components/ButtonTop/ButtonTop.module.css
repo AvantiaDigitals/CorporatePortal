@@ -1,0 +1,33 @@
+.container{
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 80px;
+  box-shadow: 3px 8px 90px 0px rgb(35 34 34 / 65%) !important;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  z-index: -1;
+  background-color: white;
+  color: #757589;
+  flex-direction: column;
+}
+
+.icon{
+  color: #702fff;
+}
+
+.show{
+  bottom: 30px;
+  opacity: 100;
+  z-index: 0;
+}
+
+.dark{
+  background-color: #0d0e0e;
+  color: white;
+}

@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/Navbar/Navbar";
+import ButtonTop from "@/components/ButtonTop/ButtonTop";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -49,6 +50,7 @@ export default function RootLayout({
       <body>
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <Navbar>{children}</Navbar>
+          <ButtonTop positionShow={200} text="Top" />
         </Providers>
       </body>
     </html>
