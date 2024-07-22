@@ -15,6 +15,7 @@ import NinethSection from "@/pages/home/section9/Section9";
 import TenthSection from "@/pages/home/section10/Section10";
 import EleventhSection from "@/pages/home/section11/Section11";
 import TwelfthSection from "@/pages/home/section12/Section12";
+import { Footer } from "@/components/Footer/Footer";
 library.add(fab);
 dom.watch();
 
@@ -33,6 +34,7 @@ export default function Home() {
       <TenthSection />
       <EleventhSection />
       <TwelfthSection />
+      <Footer />
     </>
   );
 }

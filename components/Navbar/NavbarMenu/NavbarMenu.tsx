@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import Image from "next/image";
 
 import logo from "@/public/Logo.png";
@@ -40,7 +41,9 @@ const NavbarMenu: React.FC<ParamsNabvarMenu> = ({ showMenu }) => {
     >
       <div className={styles.container}>
         <div className={styles.logo}>
-          <Image priority alt="Logo" src={logo} />
+          <Link href="/">
+            <Image priority alt="Logo" src={logo} />
+          </Link>
         </div>
         <NavbarMenuItems scrolling={scrolling} />
         <div

@@ -10,6 +10,7 @@ interface ParamsButtonAnimateBackgound {
   src?: string;
   className?: string;
   showEffect?: boolean;
+  onClick: () => void;
 }
 
 const ButtonAnimateBackgound: React.FC<ParamsButtonAnimateBackgound> = ({
@@ -17,10 +18,12 @@ const ButtonAnimateBackgound: React.FC<ParamsButtonAnimateBackgound> = ({
   style,
   className,
   showEffect = true,
+  onClick,
 }) => {
   return (
     <button
       className={`${styles.button} ${styles.buttonLarge} ${showEffect == true ? styles.buttonTransparent : ""} ${style == "dark" ? styles.dark : ""} ${className}`}
+      onClick={onClick}
     >
       <span className={styles.text}>{text}</span>
       <FontAwesomeIcon icon={faCaretRight} size="xs" />
