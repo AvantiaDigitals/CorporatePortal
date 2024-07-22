@@ -12,14 +12,17 @@
 
 .container{
   display: flex;
-  flex-direction: column;
-  padding-bottom: 120px;
-  padding-top: 30px;
   justify-content: center;
+  margin-top: 120px;
 }
 
 .firstContainer{
-  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+  height: 100vh;
+  min-height: 500px;
 }
 
 .boxContainerLeft{
@@ -33,10 +36,6 @@
   flex-direction: column;
   justify-content: center;
   padding: 30px;
-}
-
-.image{
-  /* max-height: 280px; */
 }
 
 .title{
@@ -59,7 +58,11 @@
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  .title{
+    margin-top: 20px;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .boxContainerRight{
@@ -72,10 +75,6 @@
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .container{
-    padding-bottom: 200px;
-  }
-
   .title{
     font-size: 44px;
     line-height: 55px;
@@ -93,8 +92,13 @@
   }
 
   .container{
-    flex-direction: row-reverse;
     max-width: 900px;
+    margin-top: 80px;
+  }
+
+  .firstContainer{
+    flex-direction: row-reverse;
+    padding: 0;
   }
 
   .boxContainerLeft{
@@ -140,15 +144,5 @@
 @media only screen and (min-width: 1500px) {
   .container{
     max-width: 1250px;
-  }
-}
-
-
-
-/* Rango de altura */
-@media (min-height: 782px) {
-  .container{
-    height: 100vh;
-    padding-top: 85px;
   }
 }
