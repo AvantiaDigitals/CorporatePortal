@@ -10,7 +10,7 @@ interface ParamsButtonAnimateBackgound {
   src?: string;
   className?: string;
   showEffect?: boolean;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const ButtonAnimateBackgound: React.FC<ParamsButtonAnimateBackgound> = ({
