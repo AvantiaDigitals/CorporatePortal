@@ -12,14 +12,15 @@ Este proyecto es un portal corporativo desarrollado utilizando Next.js y React. 
 
 ## Estructura del proyecto
 
+- `app/`: Contiene la estrcutura de carpetas que genera la navegacion del sitio.
 - `pages/`: Contiene las páginas del sitio.
 - `components/`: Aquí se encuentran los componentes reutilizables.
-- `styles/`: Archivos CSS para estilizar los componentes.
+- `styles/`: Archivos CSS globales.
 - `public/`: Archivos estáticos como imágenes o iconos.
 
 ## Instalación
 
-1. Clona este repositorio: `git clone https://github.com/tu-usuario/tu-proyecto.git`
+1. Clona este repositorio: `git clone https://github.com/AvantiaDigitalis/CorporatePortal.git`
 2. Instala las dependencias: `npm install`
 3. Inicia el servidor de desarrollo: `npm run dev`
 
@@ -31,7 +32,7 @@ Si deseas contribuir, ¡estamos abiertos a pull requests! Por favor, sigue nuest
 
 ¿Tienes alguna pregunta o comentario? No dudes en contactarnos:
 
-- Correo electrónico: avantia.digitalis@hotmail.com
+- Correo electrónico: roberto.castillo@avantiadigitalis.com
 - Sitio web: www.avantiadigitalis.com
 
 ---
