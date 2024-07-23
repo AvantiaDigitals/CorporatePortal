@@ -21,6 +21,9 @@ const getColor = (color?: string) => {
     case "orange":
       style = styles.orange;
       break;
+    case "purple":
+      style = styles.purple;
+      break;
     default:
       break;
   }

@@ -46,6 +46,7 @@ export default function SecondSection() {
         <div className={styles.cards}>
           <CardIcon
             ballColor={styles.iconInner1}
+            href="/services/design"
             icon={faPaintBrush}
             sheetColor={styles.icon1}
             text="We design professional looking yet simple websites. Our designs are search engine and user friendly."
@@ -53,6 +54,7 @@ export default function SecondSection() {
           />
           <CardIcon
             ballColor={styles.iconInner2}
+            href="/services/development"
             icon={faCode}
             sheetColor={styles.icon2}
             text="We design professional looking yet simple websites. Our designs are search engine and user friendly."
@@ -60,6 +62,7 @@ export default function SecondSection() {
           />
           <CardIcon
             ballColor={styles.iconInner3}
+            href="/services/marketing"
             icon={faComment}
             sheetColor={styles.icon3}
             text="We design professional looking yet simple websites. Our designs are search engine and user friendly."
@@ -67,6 +70,7 @@ export default function SecondSection() {
           />
           <CardIcon
             ballColor={styles.iconInner4}
+            href="/services/bussines"
             icon={faBuilding}
             sheetColor={styles.icon4}
             text="We design professional looking yet simple websites. Our designs are search engine and user friendly."
@@ -74,6 +78,7 @@ export default function SecondSection() {
           />
           <CardIcon
             ballColor={styles.iconInner5}
+            href="/services/technology"
             icon={faLaptop}
             sheetColor={styles.icon5}
             text="We design professional looking yet simple websites. Our designs are search engine and user friendly."
@@ -81,6 +86,7 @@ export default function SecondSection() {
           />
           <CardIcon
             ballColor={styles.iconInner6}
+            href="/services/contentStrategy"
             icon={faBarChart}
             sheetColor={styles.icon6}
             text="We design professional looking yet simple websites. Our designs are search engine and user friendly."

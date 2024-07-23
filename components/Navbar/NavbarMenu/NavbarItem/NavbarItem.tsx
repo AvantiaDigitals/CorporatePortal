@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 import { TypeParamsNavbarItem } from "@/components/Navbar/NavbarMenu/NavbarItem/TypeParamsNavbarItem";
 import styles from "@/components/Navbar/NavbarMenu/NavbarItem/NavbarItem.module.css";
@@ -24,7 +25,11 @@ const NavbarItem: React.FC<ParamsNavbarItem> = ({ params }) => {
         <ul
           className={`${styles.options} ${theme == "dark" ? styles.optionsDark : styles.optionsLight} ${params.scrolling ? styles.optionsMin : styles.optionsMax}`}
         >
-          {params.options?.map((item) => <li key={item.id}>{item.label}</li>)}
+          {params.options?.map((item) => (
+            <Link key={item.id} href={item.href}>
+              <li>{item.label}</li>
+            </Link>
+          ))}
         </ul>
       )}
     </li>

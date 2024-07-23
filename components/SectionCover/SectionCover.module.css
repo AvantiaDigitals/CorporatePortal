@@ -1,0 +1,148 @@
+.section{
+  display: flex;
+}
+
+.firstSecctionLigth{
+  background-color: var(--background-color-light);
+}
+
+.firstSecctionDark{
+  background-color: var(--background-color-dark);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.firstContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+  height: 100vh;
+  min-height: 500px;
+}
+
+.boxContainerLeft{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxContainerRight{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.title{
+  margin-bottom: 7px;
+  font-size: 31px;
+  line-height: 42px;
+  color: #000248;
+  font-weight: 700;
+}
+
+.subtitle{
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #52526c;
+}
+
+.dark{
+  color: #d3d3d4;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title{
+    margin-top: 20px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .boxContainerRight{
+    padding: 0 50px;
+  }
+
+  .boxContainerLeft{
+    padding: 30px 50px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .title{
+    font-size: 44px;
+    line-height: 55px;
+  }
+  
+  .subtitle{
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .section{
+    justify-content: center;
+  }
+
+  .container{
+    max-width: 900px;
+    margin-top: 80px;
+  }
+
+  .firstContainer{
+    flex-direction: row-reverse;
+    padding: 0;
+  }
+
+  .boxContainerLeft{
+    padding: 0;
+  }
+  
+  .boxContainerRight{
+    padding: 0;
+  }
+
+  .image{
+    max-height: 500px;
+  }
+
+  .title{
+    font-size: 55px;
+    line-height: 68px;
+  }
+  
+  .subtitle{
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container{
+    max-width: 1100px;
+  }
+
+  .title{
+    font-size: 55px;
+    line-height: 68px;
+  }
+  
+  .subtitle{
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+  .container{
+    max-width: 1250px;
+  }
+}

@@ -65,7 +65,7 @@ export const siteConfig = {
         { id: 26, label: "Case Study", href: "/" },
         { id: 27, label: "Case Study Details", href: "/" },
         { id: 28, label: "Comming Soon", href: "/" },
-        { id: 29, label: "404 Page", href: "/" },
+        { id: 29, label: "404 Page", href: "/404" },
       ],
     },
     {

@@ -39,59 +39,6 @@
 .rightContent{
   display: flex;
   flex-direction: column;
-  /* padding: 0px 10px 20px 10px; */
-}
-
-.formContainer{
-  background-color: white;
-  box-sizing: border-box;
-  padding: 50px 20px;
-  margin-top: 30px;
-}
-
-.formContainerDark{
-  background-color: var(--background-color-dark);;
-}
-
-.titleForm{
-  color: #000248;
-  font-size: 22px;
-  line-height: 36px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.input{
-  margin: 20px 0;
-}
-
-.buttonAnimate{
-  width: 100%;
-  margin: 30px 0;
-  font-weight: 700;
-}
-
-.footer{
-  text-align: center;
-  font-weight: 400;
-}
-
-.phone{
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.number{
-  cursor: pointer;
-  transition: all .5s;
-}
-
-.number:hover{
-  color: #702fff;
-}
-
-.phoneLight{
-  color: #000248;
 }
 
 .dark{
@@ -100,20 +47,6 @@
 
 .light{
   color: #757589;
-}
-
-/* Estilos de los inputs*/
-.inputLabel{
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  z-index: 1;
-}
-
-.inputWrapper::after {
-  content: '';
-  --tw-bg-opacity: 1;
-  background-color: #702fff;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -134,44 +67,6 @@
   .leftContent>p{
     font-size: 18px;
     line-height: 28px;
-  }
-
-  .formContainer{
-    perspective: 1000px;
-    max-width: 490px;
-    padding: 50px 50px 50px 60px;
-    margin-top: 50px;
-  }
-
-  .formContainerDark::after, .formContainer::after{
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transform-style: preserve-3d;
-    transform: rotateY(-10deg);
-    box-shadow: 4px 2px 9px 7px rgba(0, 0, 0, .1);
-  }
-
-  .formContainerDark::after{
-    background: #242526;
-    box-shadow: 0 0 1px transparent;
-  }
-
-  .titleForm{
-    font-size: 33px;
-    line-height: 46px;
-  }
-
-  .phone{
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 26px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -200,19 +95,6 @@
     width: 50%;
     margin-left: 20px;
   }
-
-  .formContainer{
-    padding: 30px;
-  }
-
-  .titleForm{
-    font-size: 35px;
-  }
-
-  .phone{
-    font-size: 22px;
-    line-height: 26px;
-  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -227,10 +109,6 @@
 
   .rightContent{
     margin-left: 50px;
-  }
-
-  .formContainer{
-    padding: 60px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */

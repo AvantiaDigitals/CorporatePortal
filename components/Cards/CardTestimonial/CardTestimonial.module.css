@@ -9,6 +9,7 @@
 
 .selected{
   box-shadow: #9f9f9f 0px 5px 10px 0px;
+  background-color: white;
 }
 
 .selectedDark{

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Component3D } from "@/components/Component3D/Component3D";
 import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
 import styles from "@/components/Cards/CardIcon/CardIcon.module.css";
+import Link from "next/link";
 
 interface ParamsCardIcon {
   title: string;
@@ -13,6 +14,7 @@ interface ParamsCardIcon {
   icon: IconDefinition;
   sheetColor: string;
   ballColor: string;
+  href?: string;
 }
 
 const CardIcon: React.FC<ParamsCardIcon> = ({
@@ -21,6 +23,7 @@ const CardIcon: React.FC<ParamsCardIcon> = ({
   icon,
   sheetColor,
   ballColor,
+  href,
 }) => {
   const { theme } = useTheme();
 
@@ -51,11 +54,13 @@ const CardIcon: React.FC<ParamsCardIcon> = ({
           >
             {text}
           </p>
-          <span
-            className={`${theme == "dark" ? styles.buttonDark : styles.button}`}
-          >
-            Learn More
-          </span>
+          <Link href={href != undefined ? href : "/"}>
+            <span
+              className={`${theme == "dark" ? styles.buttonDark : styles.button}`}
+            >
+              Learn More
+            </span>
+          </Link>
         </div>
       </Component3D>
     </ScrollComponent>

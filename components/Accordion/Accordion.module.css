@@ -1,0 +1,85 @@
+.containerList{
+
+}
+
+.itemListContainer{
+  padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.itemListContainerDark{
+  border-bottom: 1px solid #2e2e2e;
+}
+
+.itemListHeader{
+  margin: 10px 0;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.itemListTitle{
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-left: 15px;
+  color: #52526c;
+}
+
+.itemListBody{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  padding: 0;
+  height: 0px;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  color: #757589;
+}
+
+.itemListTitleDark, .itemListBodyDark{
+  color: #d3d3d4;
+}
+
+.icon{
+  font-size: 25px;
+  color: #52526c;
+}
+
+.iconDark{
+  color: #d3d3d4;
+}
+
+.itemListContainer.select>.itemListBody{
+  padding: 15px 0;
+  height: 100px;
+}
+
+.itemListContainer.select .itemListTitle{
+  color: #702fff;
+}
+
+.itemListContainer.select .icon{
+  color: #702fff;
+}
+
+.itemListContainer.select{
+  border-bottom: 4px solid #702fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .itemListBody{
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {}
