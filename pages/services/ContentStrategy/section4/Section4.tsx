@@ -11,10 +11,10 @@ import Label from "@/components/Label/Label";
 import ButtonAnimateBackgound from "@/components/ButtonAnimate/Background/ButtonAnimateBackgound";
 import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
 import { GridImage } from "@/components/GridImage/GridImage";
-import styles from "@/pages/home/section5/Section5.module.css";
+import styles from "@/pages/services/ContentStrategy/section4/Section4.module.css";
 import { ParamsImageProject } from "@/components/GridImage/ImageProject/ImageProject";
 
-export default function FifthSection() {
+export default function FourthSection() {
   const { theme } = useTheme();
 
   const projects: ParamsImageProject[] = [
