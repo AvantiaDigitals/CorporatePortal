@@ -11,7 +11,7 @@ import Label from "@/components/Label/Label";
 import { Accordion, ItemAccordion } from "@/components/Accordion/Accordion";
 import { ContactForm } from "@/components/ContactForm/ContactForm";
 import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
-import styles from "@/pages/services/Design/section2/Section2.module.css";
+import styles from "@/pages/services/Bussines/section2/Section2.module.css";
 
 export default function SecondSection() {
   const { theme } = useTheme();

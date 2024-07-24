@@ -1,7 +1,7 @@
 import Section1 from "@/pages/services/Technology/section1/Section1";
 import Section2 from "@/pages/services/Technology/section2/Section2";
 import Section3 from "@/pages/services/Technology/section3/Section3";
-import Section4 from "@/pages/home/section5/Section5";
+import Section4 from "@/pages/services/Technology/section4/Section4";
 import Section5 from "@/pages/home/section12/Section12";
 import { Footer } from "@/components/Footer/Footer";
 

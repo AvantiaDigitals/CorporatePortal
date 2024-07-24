@@ -8,7 +8,7 @@ import process2 from "@/public/process-02.jpg";
 import Label from "@/components/Label/Label";
 import { Component3D } from "@/components/Component3D/Component3D";
 import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
-import styles from "@/pages/services/Design/section3/Section3.module.css";
+import styles from "@/pages/services/Marketing/section3/Section3.module.css";
 
 export default function ThirdSection() {
   const { theme } = useTheme();

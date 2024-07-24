@@ -27,7 +27,6 @@
   opacity: 0;
   position: absolute;
   left: 0;
-  width: 220px;
   padding: 0 15px;
   padding-bottom: 20px;
   padding-top: 10px;
@@ -35,12 +34,14 @@
   transition: opacity 1s ease-in-out;
 }
 
-.options>li{
+.options li{
+  white-space: nowrap;
   line-height: 31px;
   font-size: 15px;
+  padding-right: 50px;
 }
 
-.options>li:hover{
+.options li:hover{
   cursor: pointer;
   color: var(--select-option-menu);
 }
