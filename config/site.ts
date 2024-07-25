@@ -26,9 +26,9 @@ export const siteConfig = {
     {
       id: 7,
       label: "Services",
-      href: "/",
+      href: "/services",
       options: [
-        { id: 8, label: "Services", href: "/" },
+        { id: 8, label: "Services", href: "/services" },
         { id: 9, label: "Services Two", href: "/" },
         { id: 10, label: "Services Details", href: "/" },
       ],

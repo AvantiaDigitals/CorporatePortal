@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { TypeParamsNavbarItem } from "@/components/Navbar/NavbarMenu/NavbarItem/TypeParamsNavbarItem";
 import styles from "@/components/Navbar/NavbarAside/NavbarAsideItem/NavbarAsideItem.module.css";
+import Link from "next/link";
 
 interface ParamsNavbarAsideItem {
   params: TypeParamsNavbarItem;
@@ -45,7 +46,11 @@ const NavbarAsideItem: React.FC<ParamsNavbarAsideItem> = ({ params }) => {
         className={`${styles.subOptions}`}
         style={{ height: heightState }}
       >
-        {params.options?.map((item) => <li key={item.id}>{item.label}</li>)}
+        {params.options?.map((item) => (
+          <li key={item.id} className={styles.link}>
+            <Link href={item.href}>{item.label}</Link>
+          </li>
+        ))}
       </ul>
     </li>
   );
