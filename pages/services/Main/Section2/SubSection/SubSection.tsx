@@ -13,7 +13,7 @@ export default function SubSection({ sections }: { sections: ItemSubNav[] }) {
 
   return (
     <>
-      {sections.map((item, index) => (
+      {sections?.map((item, index) => (
         <div
           key={index}
           className={`${styles.section} ${theme == "dark" ? styles.secctionDark : styles.secctionLigth}`}
