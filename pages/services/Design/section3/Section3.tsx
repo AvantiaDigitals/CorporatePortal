@@ -33,7 +33,8 @@ export default function ThirdSection() {
             <p
               className={`${styles.paragraph} ${theme == "dark" ? styles.dark : styles.light}`}
             >
-              Our comprehensive design strategy ensures a perfectly crafted design for your business.
+              Our comprehensive design strategy ensures a perfectly crafted
+              design for your business.
             </p>
           </ScrollComponent>
         </div>

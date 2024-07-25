@@ -33,6 +33,10 @@
   margin-top: 15px;
 }
 
+.paragraph{
+  max-width: 600px;
+}
+
 .paragraph, .paragraphProcess{
   margin: 10px 0;
   font-size: 16px;
@@ -59,6 +63,17 @@
 
 .imageConainer{
   margin-bottom: 50px;
+  width: 100%;
+}
+
+.processContainer:nth-child(odd) .imageConainer{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.processContainer:nth-child(even) .imageConainer{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .contentContainer{
@@ -161,9 +176,9 @@
     width: 50%;
   }
 
-  .processContainer:nth-child(odd)>.imageConainer{
+  .processContainer:nth-child(odd)>.imageConainer, .processContainer:nth-child(even) .imageConainer{
     display: flex;
-    justify-content: end;
+    justify-content: center;
   }
 
   .processContainer:nth-child(odd)>.contentContainer{
