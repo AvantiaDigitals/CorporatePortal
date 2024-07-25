@@ -1,0 +1,141 @@
+.section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.secctionDark{
+  background-color: var(--background-color-dark-second);
+}
+
+.secctionDark:nth-child(even){
+  background-color: #242526;
+}
+
+.secctionLigth{
+  background-color: white;
+}
+
+.secctionLigth:nth-child(even){
+  background-color: #fafafb;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  margin-left: 15px;
+}
+
+.title{
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 25px;
+  place-items: center;
+}
+
+.cardDark{
+  background-color: #242526;
+}
+
+.cardLigth{
+  background-color: white;
+}
+
+.secctionDark:nth-child(even) .cardDark{
+  background-color: var(--background-color-dark-second);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 25px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .title{
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .cards{
+    grid-column-gap: 6px;
+    grid-row-gap: 60px;
+  }
+
+  .secctionDark:nth-child(even) .cardDark::before{
+    transform: perspective(500px) rotateY(-5deg);
+    position: absolute;
+    width: calc(100% - 5px);
+    height: calc(100% - 10px);
+    top: 30px;
+    right: 25px;
+    content: "";
+    border: 4px solid var(--background-color-dark-second);
+    z-index: -1;
+    transition: all .4s;
+    box-shadow: 0 0 1px transparent;
+    transition-delay: .2s;
+    opacity: 0;
+    visibility: hidden;
+    transform-style: preserve-3d;
+    pointer-events: none;
+  }
+
+  .secctionDark:nth-child(even) .cardDark:hover::before{
+    border: 4px solid var(--background-color-dark-second);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container{
+    max-width: 900px;
+  }
+
+  .title{
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .cards{
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 60px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container{
+    max-width: 1100px;
+  }
+
+  .title{
+    font-size: 50px;
+    line-height: 62px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+  .container{
+    max-width: 1250px;
+  }
+}

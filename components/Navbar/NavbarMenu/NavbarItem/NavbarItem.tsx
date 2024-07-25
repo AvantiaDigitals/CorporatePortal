@@ -19,16 +19,16 @@ const NavbarItem: React.FC<ParamsNavbarItem> = ({ params }) => {
       <button
         className={`${styles.button} ${params.scrolling ? styles.buttonMin : styles.buttonMax}`}
       >
-        {params.label}
+        <Link href={params.href}>{params.label}</Link>
       </button>
       {params.options && (
         <ul
           className={`${styles.options} ${theme == "dark" ? styles.optionsDark : styles.optionsLight} ${params.scrolling ? styles.optionsMin : styles.optionsMax}`}
         >
           {params.options?.map((item) => (
-            <Link key={item.id} href={item.href}>
-              <li>{item.label}</li>
-            </Link>
+            <li key={item.id}>
+              <Link href={item.href}>{item.label}</Link>
+            </li>
           ))}
         </ul>
       )}

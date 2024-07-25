@@ -1,0 +1,84 @@
+.section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.secctionDark{
+  background-color: var(--background-color-dark-second);
+}
+
+.secctionLigth{
+  background-color: white;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Colores para las cards [Balls] */
+.iconInner1{
+  background: #702fff;
+}
+
+.iconInner2{
+  background: #5bcc9f;
+}
+
+.iconInner3{
+  background: #49ccff;
+}
+
+.iconInner4{
+  background: #ffcd3e;
+}
+
+.iconInner5{
+  background: #007aff;
+}
+
+.iconInner6{
+  background: #ff8a5b;
+}
+
+/* Colores para las cards [Sheets] */
+.icon1::before{
+  background: linear-gradient(180deg, #ebfffd, #efeefa);
+}
+
+.icon2::before{
+  background: linear-gradient(180deg,#fef7e2,#eeeefd);
+}
+
+.icon3::before{
+  background: linear-gradient(134.74deg,#d6fffc,#fae7e4);
+}
+
+.icon4::before{
+  background: linear-gradient(180deg,#f7f6ff,#feefeb);
+}
+
+.icon5::before{
+  background: linear-gradient(180deg,#ebfffd,#efeefa);
+}
+
+.icon6::before{
+  background: linear-gradient(180deg,#f7f6ff,#feefeb);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {}

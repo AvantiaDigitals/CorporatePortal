@@ -1,63 +1,70 @@
 .section{
   display: flex;
   justify-content: center;
-  width: 100%;
-}
-
-.secctionLigth{
-  background: linear-gradient(180deg, #eaf8ff, #f6f6ff);
-  color: #000248;
 }
 
 .secctionDark{
-  background-color: #000;
-  color: #d3d3d4;
+  background-color: var(--background-color-dark-second);
+}
+
+.secctionLigth{
+  background-color: white;
 }
 
 .container{
-  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 50px 50px 50px 50px;
-  width: 100%;
-  align-items: center;
 }
 
-.title{
-  font-size: 28px;
-  line-height: 40px;
-  font-weight: 700;
-  margin: 10px 0;
-  text-align: center;
+.leftContent{
+  display: flex;
+  flex-direction: column;
 }
 
-.button{
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-.phone{
-  font-size: 15px;
-  line-height: 24px;
+.leftContent .paragraph{
+  margin: 15px 0;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 400;
 }
 
-.number{
-  transition: all .5s;
-  font-size: 15px;
-  line-height: 26px;
+.title{
+  font-size: 30px;
+  line-height: 40px;
   font-weight: 700;
-  cursor: pointer;
+  margin-top: 15px;
 }
 
-.number:hover{
-  color: #7a19ff;
+.paragraph{
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.rightContent{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.dark{
+  color: #d3d3d4;
+}
+
+.light{
+  color: #757589;
+}
+
+.form{
+  margin: 0;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600) {}
+@media only screen and (min-width: 600px) {}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .container{
@@ -65,26 +72,51 @@
   }
 
   .title{
-    margin-bottom: 15px;
     font-size: 35px;
     line-height: 42px;
   }
 
-  .number{
-    font-size: 22px;
+  .paragraph{
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .leftContent>p{
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .container{
     max-width: 900px;
-    align-items: center;
+    flex-direction: row;
     padding: 120px 50px 100px 50px;
+  }
+
+  .leftContent{
+    width: 50%;
+  }
+
+  .leftContent>p{
+    font-size: 20px;
+    line-height: 32px;
   }
 
   .title{
     font-size: 40px;
     line-height: 52px;
+    margin-bottom: 20px;
+  }
+
+  .paragraph{
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .rightContent{
+    width: 50%;
+    margin: 0;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
