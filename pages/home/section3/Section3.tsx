@@ -1,10 +1,5 @@
 "use client";
 
-// import Image from "next/image";
-
-// import imageWeb from "@/public/web.svg";
-// import ButtonAnimateBackgound from "@/components/ButtonAnimate/Background/ButtonAnimateBackgound";
-// import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
 import { useTheme } from "next-themes";
 import { EmblaOptionsType } from "embla-carousel";
 
@@ -17,11 +12,7 @@ import styles from "@/pages/home/section3/Section3.module.css";
 
 export default function ThirdSection() {
   const { theme } = useTheme();
-
   const OPTIONS: EmblaOptionsType = {};
-  // const SLIDE_COUNT = 3;
-  // const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
-
   const caseStudies: ParamsCaseStudy[] = [
     {
       key: 1,

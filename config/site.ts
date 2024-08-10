@@ -36,7 +36,7 @@ export const siteConfig = {
     {
       id: 11,
       label: "About Us",
-      href: "/",
+      href: "/about",
     },
     {
       id: 12,
@@ -71,7 +71,7 @@ export const siteConfig = {
     {
       id: 30,
       label: "Contact",
-      href: "/",
+      href: "/contact",
     },
   ],
 };
