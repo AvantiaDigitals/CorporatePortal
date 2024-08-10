@@ -3,10 +3,11 @@
 import React, { useState, useRef } from "react";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import { TypeParamsNavbarItem } from "@/components/Navbar/NavbarMenu/NavbarItem/TypeParamsNavbarItem";
 import styles from "@/components/Navbar/NavbarAside/NavbarAsideItem/NavbarAsideItem.module.css";
-import Link from "next/link";
 
 interface ParamsNavbarAsideItem {
   params: TypeParamsNavbarItem;
@@ -16,6 +17,12 @@ const NavbarAsideItem: React.FC<ParamsNavbarAsideItem> = ({ params }) => {
   const optionsRef = useRef(null);
   const [showSubMenu, SetShowSubMenu] = useState(false);
   const [heightState, SetHeight] = useState(0);
+  const router = useRouter();
+
+  const goToPage = (href: string) => {
+    router.push(href);
+  };
+
   const ShowSubMenu = () => {
     if (!showSubMenu) {
       var heightOptionsContainer: any = optionsRef.current;
@@ -33,7 +40,14 @@ const NavbarAsideItem: React.FC<ParamsNavbarAsideItem> = ({ params }) => {
       <span
         className={`${styles.primary}`}
         role="none"
-        onClick={ShowSubMenu}
+        onClick={
+          params.options
+            ? ShowSubMenu
+            : () => {
+                params.showMenu!();
+                goToPage(params.href);
+              }
+        }
         onKeyUp={() => {}}
       >
         <span className={styles.textOption}>{params.label}</span>
@@ -47,8 +61,16 @@ const NavbarAsideItem: React.FC<ParamsNavbarAsideItem> = ({ params }) => {
         style={{ height: heightState }}
       >
         {params.options?.map((item) => (
-          <li key={item.id} className={styles.link}>
-            <Link href={item.href}>{item.label}</Link>
+          <li
+            key={item.id}
+            className={styles.link}
+            role="none"
+            onClick={params.showMenu}
+            onKeyUp={() => {}}
+          >
+            <Link href={item.href} onClick={params.showMenu}>
+              {item.label}
+            </Link>
           </li>
         ))}
       </ul>
