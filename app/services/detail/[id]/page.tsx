@@ -134,6 +134,51 @@ export default function Page({ params }: { params: { id: string } }) {
       title: "Design",
       text: "We design professional looking yet simple websites. Our designs are search engine and user friendly.",
     },
+    {
+      id: "23",
+      title: "Visual brandingign",
+      text: "We design professional looking yet simple websites. Our designs are search engine and user friendly.",
+    },
+    {
+      id: "24",
+      title: "Interaction",
+      text: "We design professional looking yet simple websites. Our designs are search engine and user friendly.",
+    },
+    {
+      id: "25",
+      title: "Creative production",
+      text: "We design professional looking yet simple websites. Our designs are search engine and user friendly.",
+    },
+    {
+      id: "26",
+      title: "Development",
+      text: "We design professional looking yet simple websites. Our designs are search engine and user friendly.",
+    },
+    {
+      id: "27",
+      title: "Digital marketing",
+      text: "We design professional looking yet simple websites. Our designs are search engine and user friendly.",
+    },
+    {
+      id: "28",
+      title: "SEO optimization",
+      text: "We design professional looking yet simple websites. Our designs are search engine and user friendly.",
+    },
+    {
+      id: "29",
+      title: "Discuss",
+      text: "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit.",
+    },
+    {
+      id: "30",
+      title: "Mapping",
+      text: "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit.",
+    },
+    {
+      id: "31",
+      title: "Execution",
+      text: "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit.",
+    },
   ];
 
   useEffect(() => {

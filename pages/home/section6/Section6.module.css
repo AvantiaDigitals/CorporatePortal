@@ -58,6 +58,7 @@
   box-sizing: border-box;
   position: relative;
   z-index: 1;
+  box-shadow: -8px 7px 70px 0px rgba(0,0,0,0.3);
 }
 
 .box::after{
