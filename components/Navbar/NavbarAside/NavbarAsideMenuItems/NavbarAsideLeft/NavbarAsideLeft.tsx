@@ -37,6 +37,7 @@ const NavbarAsideLeft: React.FC<ParamsNabvarMenu> = ({ showMenu }) => {
               id: item.id,
               label: item.label,
               href: item.href,
+              showMenu: showMenu,
               options: item.options,
             }}
           />
