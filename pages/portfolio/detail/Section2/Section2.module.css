@@ -1,0 +1,155 @@
+.section{
+  display: flex;
+  justify-content: center;
+}
+
+.secctionDark{
+  background-color: var(--background-color-dark-second);
+}
+
+.secctionLigth{
+  background-color: white;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px 50px 50px;
+}
+
+.leftContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph{
+  margin: 15px 0;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.title{
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.subtitle{
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.button{
+  margin-top: 30px;
+}
+
+.rightContent{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.accordion{
+  margin-top: 30px;
+}
+
+.dark{
+  color: #d3d3d4;
+}
+
+.light{
+  color: #757589;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container{
+    padding: 80px 100px 50px 100px;
+  }
+
+  .title{
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .paragraph{
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .leftContent>p{
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .subtitle{
+    font-size: 30px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container{
+    max-width: 900px;
+    flex-direction: row;
+    padding: 120px 50px 100px 50px;
+  }
+
+  .leftContent{
+    width: 50%;
+  }
+
+  .leftContent>p{
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .title{
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 20px;
+  }
+
+  .paragraph{
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .rightContent{
+    width: 50%;
+    margin-left: 50px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container{
+    max-width: 1100px;
+  }
+
+  .title{
+    font-size: 50px;
+    line-height: 62px;
+  }
+
+  .subtitle{
+    font-size: 35px;
+  }
+
+  .rightContent{
+    width: 50%;
+    margin-left: 100px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+  .container{
+    max-width: 1250px;
+  }
+}

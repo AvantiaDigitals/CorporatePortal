@@ -14,7 +14,13 @@ export interface ItemAccordion {
   isSelected?: boolean;
 }
 
-export function Accordion({ listItems }: { listItems: ItemAccordion[] }) {
+export function Accordion({
+  listItems,
+  className,
+}: {
+  listItems: ItemAccordion[];
+  className?: string;
+}) {
   const { theme } = useTheme();
   const [items, setItems] = useState(listItems);
 
@@ -32,7 +38,7 @@ export function Accordion({ listItems }: { listItems: ItemAccordion[] }) {
 
   const printItems = () => {
     return (
-      <ul>
+      <ul className={className}>
         {items.map((item, index) => (
           <li key={index}>
             <div
