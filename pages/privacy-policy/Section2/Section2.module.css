@@ -1,0 +1,160 @@
+.section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstSecctionLigth{
+  background-color: white;
+}
+
+.firstSecctionDark{
+  background-color: #18191a;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.subtitle{
+  color: #000248;
+  font-size: 20px;
+  line-height: 29px;
+  display: inline-block;
+  margin: 0 15px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #702fff;
+  margin-bottom: 30px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+.title{
+  margin-top: 50px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000248;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.paragraph{
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #757589;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.list{
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #757589;
+  font-weight: 400;
+  margin-left: 30px;
+  list-style-type: disc;
+}
+
+.list>li{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.list>li:hover{
+  color: #702fff;
+}
+
+.email{
+  color: #702fff;
+  text-decoration: none;
+  transition: all .5s;
+  display: inline-block;
+  position: relative;
+}
+
+.email:hover{
+  cursor: pointer;
+}
+
+.email:after {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  content: "";
+  left: 0;
+  background: #702fff;
+  transition: all .5s;
+}
+
+.email:hover::after {
+  width: 100%;
+}
+
+.dark{
+  color: #d3d3d4;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container{
+    max-width: 500px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container{
+    max-width: 700px;
+  }
+
+  .subtitle{
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .title{
+    font-size: 33px;
+    line-height: 46px;
+  }
+
+  .paragraph, .list{
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container{
+    max-width: 900px;
+  }
+
+  .title{
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .paragraph, .list{
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container{
+    max-width: 1100px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+  .container{
+    max-width: 1250px;
+  }
+}

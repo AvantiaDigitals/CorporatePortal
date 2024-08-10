@@ -3,9 +3,11 @@
 import { useTheme } from "next-themes";
 import { Input } from "@nextui-org/input";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 import ButtonAnimateBackgound from "@/components/ButtonAnimate/Background/ButtonAnimateBackgound";
 import styles from "@/components/Footer/Footer.module.css";
+
 
 export function Footer() {
   const { theme } = useTheme();
@@ -102,32 +104,44 @@ export function Footer() {
             <div className={styles.sectionService}>
               <h3 className={styles.area}>Services</h3>
               <span
-                className={theme == "dark" ? styles.serviceDark : styles.service}
+                className={
+                  theme == "dark" ? styles.serviceDark : styles.service
+                }
               >
                 Logo & Branding
               </span>
               <span
-                className={theme == "dark" ? styles.serviceDark : styles.service}
+                className={
+                  theme == "dark" ? styles.serviceDark : styles.service
+                }
               >
                 Website Development
               </span>
               <span
-                className={theme == "dark" ? styles.serviceDark : styles.service}
+                className={
+                  theme == "dark" ? styles.serviceDark : styles.service
+                }
               >
                 Mobile App Development
               </span>
               <span
-                className={theme == "dark" ? styles.serviceDark : styles.service}
+                className={
+                  theme == "dark" ? styles.serviceDark : styles.service
+                }
               >
                 Search Engine Optimization
               </span>
               <span
-                className={theme == "dark" ? styles.serviceDark : styles.service}
+                className={
+                  theme == "dark" ? styles.serviceDark : styles.service
+                }
               >
                 Pay-Per-Click
               </span>
               <span
-                className={theme == "dark" ? styles.serviceDark : styles.service}
+                className={
+                  theme == "dark" ? styles.serviceDark : styles.service
+                }
               >
                 Social Media Marketing
               </span>
@@ -135,17 +149,23 @@ export function Footer() {
             <div className={`${styles.sectionService} ${styles.showDown}`}>
               <h3 className={styles.area}>Resourses</h3>
               <span
-                className={theme == "dark" ? styles.serviceDark : styles.service}
+                className={
+                  theme == "dark" ? styles.serviceDark : styles.service
+                }
               >
                 Blog
               </span>
               <span
-                className={theme == "dark" ? styles.serviceDark : styles.service}
+                className={
+                  theme == "dark" ? styles.serviceDark : styles.service
+                }
               >
                 Case Studies
               </span>
               <span
-                className={theme == "dark" ? styles.serviceDark : styles.service}
+                className={
+                  theme == "dark" ? styles.serviceDark : styles.service
+                }
               >
                 Portfolio
               </span>
@@ -153,17 +173,24 @@ export function Footer() {
             <div className={styles.sectionService}>
               <h3 className={styles.area}>Support</h3>
               <span
-                className={theme == "dark" ? styles.serviceDark : styles.service}
+                className={
+                  theme == "dark" ? styles.serviceDark : styles.service
+                }
               >
                 Contact
               </span>
-              <span
-                className={theme == "dark" ? styles.serviceDark : styles.service}
+              <Link
+                className={
+                  theme == "dark" ? styles.serviceDark : styles.service
+                }
+                href="/privacy-policy"
               >
                 Privacy Policy
-              </span>
+              </Link>
               <span
-                className={theme == "dark" ? styles.serviceDark : styles.service}
+                className={
+                  theme == "dark" ? styles.serviceDark : styles.service
+                }
               >
                 Sitemap
               </span>
@@ -176,11 +203,12 @@ export function Footer() {
         >
           © 2022. All rights reserved by Your Company.
           <div className={styles.terms}>
-            <span
+            <Link
               className={`${theme == "dark" ? styles.serviceDark : styles.service} ${styles.politic}`}
+              href="/privacy-policy"
             >
               Privacy Policy
-            </span>
+            </Link>
             <span
               className={`${theme == "dark" ? styles.serviceDark : styles.service} ${styles.politic}`}
             >

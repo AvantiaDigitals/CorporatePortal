@@ -179,6 +179,38 @@ export default function Page({ params }: { params: { id: string } }) {
       title: "Execution",
       text: "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit.",
     },
+    {
+      id: "32",
+      title: "Exceed clients’ and colleagues’ expectations",
+      text: "Ut id orci ultricies, gravida arcu ac, elementum eros. Curabitur tortor ipsum, imperdiet eget odio ac, faucibus ultricies nisl. Maecenas scelerisque dignissim elit.",
+    },
+    {
+      id: "33",
+      title:
+        "Take ownership and question the status quo in a constructive manner",
+      text: "Ut id orci ultricies, gravida arcu ac, elementum eros. Curabitur tortor ipsum, imperdiet eget odio ac, faucibus ultricies nisl. Maecenas scelerisque dignissim elit.",
+    },
+    {
+      id: "34",
+      title:
+        "Be brave, curious and experiment – learn from all successes and failures",
+      text: "Ut id orci ultricies, gravida arcu ac, elementum eros. Curabitur tortor ipsum, imperdiet eget odio ac, faucibus ultricies nisl. Maecenas scelerisque dignissim elit.",
+    },
+    {
+      id: "35",
+      title: "Act in a way that makes all of us proud",
+      text: "Ut id orci ultricies, gravida arcu ac, elementum eros. Curabitur tortor ipsum, imperdiet eget odio ac, faucibus ultricies nisl. Maecenas scelerisque dignissim elit.",
+    },
+    {
+      id: "36",
+      title: "Build an inclusive, transparent and socially responsible culture",
+      text: "Ut id orci ultricies, gravida arcu ac, elementum eros. Curabitur tortor ipsum, imperdiet eget odio ac, faucibus ultricies nisl. Maecenas scelerisque dignissim elit.",
+    },
+    {
+      id: "37",
+      title: "Exceed clients’ and colleagues’ expectations",
+      text: "Ut id orci ultricies, gravida arcu ac, elementum eros. Curabitur tortor ipsum, imperdiet eget odio ac, faucibus ultricies nisl. Maecenas scelerisque dignissim elit.",
+    },
   ];
 
   useEffect(() => {
