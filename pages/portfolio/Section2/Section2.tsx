@@ -24,6 +24,7 @@ export default function SecondSection() {
       src: portfolio1,
       subtitle: "iosdesign",
       title: "Creative Agency",
+      href: "/portfolio/detail",
     },
     {
       alt: "bike",
@@ -31,6 +32,7 @@ export default function SecondSection() {
       src: portfolio2,
       subtitle: "Branding",
       title: "Rent bike",
+      href: "/portfolio/detail",
     },
     {
       alt: "laptop",
@@ -38,6 +40,7 @@ export default function SecondSection() {
       src: portfolio3,
       subtitle: "Web application",
       title: "All Volees",
+      href: "/portfolio/detail",
     },
     {
       alt: "orange",
@@ -45,6 +48,7 @@ export default function SecondSection() {
       src: portfolio4,
       subtitle: "Brandingdesign",
       title: "Larq",
+      href: "/portfolio/detail",
     },
     {
       alt: "sofa",
@@ -52,6 +56,7 @@ export default function SecondSection() {
       src: portfolio5,
       subtitle: "Branding",
       title: "Trendy Design",
+      href: "/portfolio/detail",
     },
     {
       alt: "seat",
@@ -59,6 +64,7 @@ export default function SecondSection() {
       src: portfolio1,
       subtitle: "iosdesign",
       title: "Jet Airplane",
+      href: "/portfolio/detail",
     },
   ];
 

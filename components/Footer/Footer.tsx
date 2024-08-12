@@ -91,60 +91,67 @@ export function Footer() {
               >
                 Case Studies
               </span>
-              <span
+              <Link
                 className={
                   theme == "dark" ? styles.serviceDark : styles.service
                 }
+                href="/portfolio"
               >
                 Portfolio
-              </span>
+              </Link>
             </div>
           </div>
           <div className={styles.downContainer}>
             <div className={styles.sectionService}>
               <h3 className={styles.area}>Services</h3>
-              <span
+              <Link
                 className={
                   theme == "dark" ? styles.serviceDark : styles.service
                 }
+                href="/services/detail/1"
               >
                 Logo & Branding
-              </span>
-              <span
+              </Link>
+              <Link
                 className={
                   theme == "dark" ? styles.serviceDark : styles.service
                 }
+                href="/services/detail/2"
               >
                 Website Development
-              </span>
-              <span
+              </Link>
+              <Link
                 className={
                   theme == "dark" ? styles.serviceDark : styles.service
                 }
+                href="/services/detail/7"
               >
                 Mobile App Development
-              </span>
-              <span
+              </Link>
+              <Link
                 className={
                   theme == "dark" ? styles.serviceDark : styles.service
                 }
+                href="/services/detail/9"
               >
                 Search Engine Optimization
-              </span>
-              <span
+              </Link>
+              <Link
                 className={
                   theme == "dark" ? styles.serviceDark : styles.service
                 }
+                href="/services/detail/10"
               >
                 Pay-Per-Click
-              </span>
-              <span
+              </Link>
+              <Link
                 className={
                   theme == "dark" ? styles.serviceDark : styles.service
                 }
+                href="/services/detail/13"
               >
                 Social Media Marketing
-              </span>
+              </Link>
             </div>
             <div className={`${styles.sectionService} ${styles.showDown}`}>
               <h3 className={styles.area}>Resourses</h3>
@@ -162,23 +169,25 @@ export function Footer() {
               >
                 Case Studies
               </span>
-              <span
+              <Link
                 className={
                   theme == "dark" ? styles.serviceDark : styles.service
                 }
+                href="/portfolio"
               >
                 Portfolio
-              </span>
+              </Link>
             </div>
             <div className={styles.sectionService}>
               <h3 className={styles.area}>Support</h3>
-              <span
+              <Link
                 className={
                   theme == "dark" ? styles.serviceDark : styles.service
                 }
+                href="/contact"
               >
                 Contact
-              </span>
+              </Link>
               <Link
                 className={
                   theme == "dark" ? styles.serviceDark : styles.service

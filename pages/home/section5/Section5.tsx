@@ -1,6 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 import portfolio1 from "@/public/portfolio-01.jpg";
 import portfolio2 from "@/public/portfolio-02.jpg";
@@ -24,6 +25,7 @@ export default function FifthSection() {
       src: portfolio1,
       subtitle: "iosdesign",
       title: "Creative Agency",
+      href: "/portfolio/detail",
     },
     {
       alt: "bike",
@@ -31,6 +33,7 @@ export default function FifthSection() {
       src: portfolio2,
       subtitle: "Branding",
       title: "Rent bike",
+      href: "/portfolio/detail",
     },
     {
       alt: "laptop",
@@ -38,6 +41,7 @@ export default function FifthSection() {
       src: portfolio3,
       subtitle: "Web application",
       title: "All Volees",
+      href: "/portfolio/detail",
     },
     {
       alt: "orange",
@@ -45,6 +49,7 @@ export default function FifthSection() {
       src: portfolio4,
       subtitle: "Brandingdesign",
       title: "Larq",
+      href: "/portfolio/detail",
     },
     {
       alt: "sofa",
@@ -52,6 +57,7 @@ export default function FifthSection() {
       src: portfolio5,
       subtitle: "Branding",
       title: "Trendy Design",
+      href: "/portfolio/detail",
     },
     {
       alt: "seat",
@@ -59,6 +65,7 @@ export default function FifthSection() {
       src: portfolio1,
       subtitle: "iosdesign",
       title: "Jet Airplane",
+      href: "/portfolio/detail",
     },
   ];
 
@@ -71,11 +78,13 @@ export default function FifthSection() {
           <Label className={styles.label} text="our projects" />
         </ScrollComponent>
         <GridImage projects={projects} />
-        <ButtonAnimateBackgound
-          className={styles.button}
-          style={theme}
-          text="Discover More Projects"
-        />
+        <Link href="/portfolio">
+          <ButtonAnimateBackgound
+            className={styles.button}
+            style={theme}
+            text="Discover More Projects"
+          />
+        </Link>
       </div>
     </section>
   );

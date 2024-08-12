@@ -43,11 +43,9 @@ export default function SecondSection() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             className={styles.video}
             frameBorder="0"
-            height="515"
             referrerPolicy="strict-origin-when-cross-origin"
             src="https://www.youtube.com/embed/Pj_geat9hvI?si=KOx43X5zcgGWP-29"
             title="YouTube video player"
-            width="760"
           />
         </div>
       </Overlay>

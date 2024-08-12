@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 
 import { Component3D } from "@/components/Component3D/Component3D";
 import styles from "@/components/GridImage/ImageProject/ImageProject.module.css";
+import Link from "next/link";
 
 export interface ParamsImageProject {
   src: string | StaticImport;
@@ -12,6 +13,7 @@ export interface ParamsImageProject {
   title: string;
   subtitle: string;
   categories: string[];
+  href?: string;
 }
 
 const ImageProject: React.FC<ParamsImageProject> = ({
@@ -19,19 +21,22 @@ const ImageProject: React.FC<ParamsImageProject> = ({
   alt,
   title,
   subtitle,
+  href,
 }) => {
   const { theme } = useTheme();
 
   return (
     <div className={styles.container}>
-      <Component3D className={styles.imageContent}>
-        <div
-          className={`${styles.containerImage} ${theme == "dark" ? styles.dark : styles.ligth}`}
-        >
-          <Image alt={alt} className={styles.image} src={src} />
-        </div>
-      </Component3D>
-      <h3 className={styles.title}>{title}</h3>
+      <Link href={href == undefined ? "/" : href}>
+        <Component3D className={styles.imageContent}>
+          <div
+            className={`${styles.containerImage} ${theme == "dark" ? styles.dark : styles.ligth}`}
+          >
+            <Image alt={alt} className={styles.image} src={src} />
+          </div>
+        </Component3D>
+        <h3 className={styles.title}>{title}</h3>
+      </Link>
       <span className={styles.subtitle}>{subtitle}</span>
     </div>
   );

@@ -1,29 +1,30 @@
 .section{
   display: flex;
   justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .secctionDark{
-  background-color: #242526;
+  background-color: var(--background-color-dark-second);
 }
 
 .secctionLigth{
-  background-color: #fafafb;
+  background-color: white;
 }
 
 .container{
   display: flex;
   flex-direction: column;
-  padding: 50px 100px;
+  padding: 80px 30px;
+  width: 100%;
 }
 
 .header{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  align-items: center;
 }
 
 .subtitle{
@@ -32,86 +33,50 @@
   line-height: 40px;
   font-weight: 700;
   text-align: center;
-  color: #000248;
 }
 
 .textSubtitle{
   font-size: 16px;
   line-height: 26px;
-  margin-bottom: 30px;
-  max-width: 700px;
   text-align: center;
-}
-
-.processes{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 25px;
-  place-items: center;
-}
-
-.process{
-  display: flex;
-  flex-direction: column;
   margin-bottom: 30px;
-  max-width: 600px;
 }
 
-.processNumber{
+.containerBotton{
+  width: 100%;
+  position: relative;
+}
+
+.button{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  background-color: white;
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  margin-bottom: 20px;
-  font-size: 26px;
-  line-height: 62px;
-  font-weight: 700;
-  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.processColorPurple{
-  background-color: #702fff;
-}
-
-.processColorOrange{
-  background-color: #ff9166;
-}
-
-.processColorBlue{
-  background-color: #49ccff;
-}
-
-.processColorYellow{
-  background-color: #ffcd3e;
-}
-
-.processColorGreen{
-  background-color: #5bcc9f;
-}
-
-.processTitle{
-  font-size: 20px;
-  line-height: 29px;
-  font-weight: 700;
-  transition: .3s;
-  margin-bottom: 20px;
-  color: #000248
-}
-
-.processTitle:hover{
+.icon{
   color: #702fff;
-  cursor: pointer;
 }
 
-.processDescription{
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #757589;
+.videoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.videoContainer iframe{
+  width: 60%;
+  aspect-ratio: 16 / 9;
+  border: 0;
 }
 
 .colorDark{
@@ -119,21 +84,15 @@
 }
 
 .colorLigth{
-  color: #757589;
+  color: black;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
+@media only screen and (min-width: 600px) {}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .container{
-    padding: 80px 100px 50px 100px;
-  }
-  
   .subtitle{
     font-size: 35px;
     line-height: 42px;
@@ -142,26 +101,13 @@
   .textSubtitle{
     font-size: 18px;
     line-height: 28px;
+    padding: 0 15%;
+    margin-bottom: 70px;
   }
 
-  .processes{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-  }
-
-  .process{
-    height: 350px;
-  }
-
-  .processTitle{
-    font-size: 26px;
-    line-height: 32px;
-  }
-  
-  .processDescription{
-    font-size: 18px;
-    line-height: 28px;
+  .button{
+    width: 80px;
+    height: 80px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -179,13 +125,13 @@
   .textSubtitle{
     font-size: 20px;
     line-height: 32px;
+    padding: 0 15%;
+    margin-bottom: 70px;
   }
 
-  .processes{
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 90px;
+  .button{
+    width: 120px;
+    height: 120px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -197,6 +143,10 @@
   .subtitle{
     font-size: 50px;
     line-height: 62px;
+  }
+
+  .textSubtitle{
+    padding: 0 15%;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
