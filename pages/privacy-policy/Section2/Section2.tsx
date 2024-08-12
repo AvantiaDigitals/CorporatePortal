@@ -17,7 +17,7 @@ const SecondSection = () => {
         >
           This Privacy policy was published on April 26th‚ 2018.
         </h3>
-        <div className={`${styles.subSection}`}>
+        <div className={styles.subSection}>
           <h2
             className={`${styles.title} ${theme == "dark" ? styles.dark : ""}`}
           >

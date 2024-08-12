@@ -17,6 +17,8 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .subtitle{
@@ -29,11 +31,19 @@
   border-bottom: 3px solid #702fff;
   margin-bottom: 30px;
   font-weight: 700;
-  margin-top: 60px;
+  margin-top: 30px;
+}
+
+.subSection{
+  margin-top: 50px;
+}
+
+.subSection:nth-child(2){
+  margin-top: 0;
 }
 
 .title{
-  margin-top: 50px;
+  margin-top: 0px;
   font-size: 24px;
   line-height: 36px;
   color: #000248;
@@ -43,7 +53,7 @@
 }
 
 .paragraph{
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 16px;
   line-height: 26px;
   color: #757589;
@@ -52,7 +62,7 @@
 }
 
 .list{
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 18px;
   line-height: 28px;
   color: #757589;

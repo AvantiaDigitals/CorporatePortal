@@ -9,7 +9,7 @@ import ImageProject, {
 } from "@/components/GridImage/ImageProject/ImageProject";
 import { ScrollComponent } from "@/components/ScrollComponent/ScrollComponent";
 
-export function GridImage({ projects }: { projects: ParamsImageProject[] }) {
+export function GridImage({ projects, title, gridStyles }: { projects: ParamsImageProject[], title?: string, gridStyles?: string }) {
   const [optionSelect, setOptionSelect] = useState("All");
   const [projectsObjects, setProjectsObjects] = useState<JSX.Element[]>();
   const [categories, setCategories] = useState<string[]>([]);
@@ -21,6 +21,7 @@ export function GridImage({ projects }: { projects: ParamsImageProject[] }) {
         key={index}
         alt={project.alt}
         categories={project.categories}
+        href={project.href}
         src={project.src}
         subtitle={project.subtitle}
         title={project.title}
@@ -40,6 +41,7 @@ export function GridImage({ projects }: { projects: ParamsImageProject[] }) {
         key={index}
         alt={project.alt}
         categories={project.categories}
+        href={project.href}
         src={project.src}
         subtitle={project.subtitle}
         title={project.title}
@@ -62,7 +64,9 @@ export function GridImage({ projects }: { projects: ParamsImageProject[] }) {
     <div className={styles.container}>
       <div className={styles.filterContainer}>
         <ScrollComponent>
-          <h2 className={styles.title}>Some of our finest work.</h2>
+          <h2 className={styles.title}>
+            {title ? title : "Some of our finest work."}
+          </h2>
         </ScrollComponent>
         <div className={styles.buttons}>
           {categories.map((category, index) => (
@@ -73,29 +77,9 @@ export function GridImage({ projects }: { projects: ParamsImageProject[] }) {
               onClick={filter}
             />
           ))}
-          {/* <ButtonOption
-            isChecked={optionSelect == "All"}
-            text="All"
-            onClick={filter}
-          />
-          <ButtonOption
-            isChecked={optionSelect == "Branding"}
-            text="Branding"
-            onClick={filter}
-          />
-          <ButtonOption
-            isChecked={optionSelect == "Web"}
-            text="Web"
-            onClick={filter}
-          />
-          <ButtonOption
-            isChecked={optionSelect == "Graphic"}
-            text="Graphic"
-            onClick={filter}
-          /> */}
         </div>
       </div>
-      <div className={styles.gridContainer}>{projectsObjects}</div>
+      <div className={`${styles.gridContainer} ${gridStyles}`}>{projectsObjects}</div>
     </div>
   );
 }

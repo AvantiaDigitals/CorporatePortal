@@ -1,21 +1,36 @@
 .section{
   display: flex;
   justify-content: center;
-  width: 100%;
-}
-
-.secctionDark{
-  background-color: var(--background-color-dark-second);
 }
 
 .secctionLigth{
-  background-color: white;
+  background-color: #fafafb;
+  color: #000248;
+}
+
+.secctionDark{
+  background-color: var(--background-color-dark);
+  color: #d3d3d4;
 }
 
 .container{
   display: flex;
   flex-direction: column;
-  padding: 80px 100px;
+  padding: 50px 50px 50px 50px;
+}
+
+.label{
+  background: rgba(0, 122, 255, .1);
+  color: #007aff;
+}
+
+.button{
+  align-self: center;
+  max-width: 400px;
+  width: 90%;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -32,7 +47,11 @@
 @media only screen and (min-width: 992px) {
   .container{
     max-width: 900px;
-    padding: 100px 30px;
+    padding: 120px 50px 100px 50px;
+  }
+
+  .grid{
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
