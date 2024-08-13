@@ -78,13 +78,15 @@ export default function FifthSection() {
           <Label className={styles.label} text="our projects" />
         </ScrollComponent>
         <GridImage projects={projects} />
-        <Link href="/portfolio">
-          <ButtonAnimateBackgound
-            className={styles.button}
-            style={theme}
-            text="Discover More Projects"
-          />
-        </Link>
+        <div className={styles.containerButton}>
+          <Link className={styles.link} href="/portfolio">
+            <ButtonAnimateBackgound
+              className={styles.button}
+              style={theme}
+              text="Discover More Projects"
+            />
+          </Link>
+        </div>
       </div>
     </section>
   );

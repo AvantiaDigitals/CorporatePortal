@@ -24,10 +24,19 @@
   color: #007aff;
 }
 
+.containerButton{
+  display: flex;
+  align-self: center;
+}
+
+.link{
+  width: fit-content;
+}
+
 .button{
   align-self: center;
   max-width: 400px;
-  width: 90%;
+  width: 100%;
   margin-top: 20px;
   font-size: 15px;
   font-weight: 700;
