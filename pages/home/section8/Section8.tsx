@@ -8,6 +8,7 @@ import ButtonAnimateBackgound from "@/components/ButtonAnimate/Background/Button
 import Label from "@/components/Label/Label";
 import team from "@/public/team-group.png";
 import styles from "@/pages/home/section8/Section8.module.css";
+import Link from "next/link";
 
 export default function EighthSection() {
   const { theme } = useTheme();
@@ -24,7 +25,9 @@ export default function EighthSection() {
             color="green"
             src={team}
           />
-          <span className={styles.count}>20+</span>
+          <Link className={styles.count} href="/team">
+            20+
+          </Link>
         </div>
         <div className={styles.downContainer}>
           <ScrollComponent>
@@ -43,7 +46,9 @@ export default function EighthSection() {
             </p>
           </ScrollComponent>
           <div className={styles.buttons}>
-            <ButtonAnimateBackgound style={theme} text="Our Team" />
+            <Link href="/team">
+              <ButtonAnimateBackgound style={theme} text="Our Team" />
+            </Link>
             <span
               className={`${styles.subButton} ${theme == "dark" ? styles.subButtonDark : styles.subButtonLigth}`}
             >
