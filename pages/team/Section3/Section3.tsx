@@ -22,7 +22,7 @@ export default function ThreeSection() {
       src: team1,
       subtitle: "CEO",
       title: "Madge Alvarez",
-      href: "/portfolio/detail",
+      href: "/team/detail/1",
     },
     {
       alt: "person",
@@ -30,7 +30,7 @@ export default function ThreeSection() {
       src: team2,
       subtitle: "CEO",
       title: "Jared Moreno",
-      href: "/portfolio/detail",
+      href: "/team/detail/2",
     },
     {
       alt: "person",
@@ -38,7 +38,7 @@ export default function ThreeSection() {
       src: team3,
       subtitle: "CEO",
       title: "Margaret McKinney",
-      href: "/portfolio/detail",
+      href: "/team/detail/3",
     },
     {
       alt: "person",
@@ -46,7 +46,7 @@ export default function ThreeSection() {
       src: team4,
       subtitle: "CEO",
       title: "Effie Frank",
-      href: "/portfolio/detail",
+      href: "/team/detail/4",
     },
     {
       alt: "person",
@@ -54,7 +54,7 @@ export default function ThreeSection() {
       src: team5,
       subtitle: "CEO",
       title: "Tyler Hardy",
-      href: "/portfolio/detail",
+      href: "/team/detail/5",
     },
     {
       alt: "person",
@@ -62,7 +62,7 @@ export default function ThreeSection() {
       src: team6,
       subtitle: "CEO",
       title: "Effie Arnold",
-      href: "/portfolio/detail",
+      href: "/team/detail/6",
     },
   ];
 

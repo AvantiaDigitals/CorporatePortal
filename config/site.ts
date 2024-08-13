@@ -61,7 +61,7 @@ export const siteConfig = {
         { id: 22, label: "Pricing", href: "/" },
         { id: 23, label: "Services", href: "/services" },
         { id: 24, label: "Team", href: "/team" },
-        { id: 25, label: "Team Details", href: "/" },
+        { id: 25, label: "Team Details", href: "/team/detail/1" },
         { id: 26, label: "Case Study", href: "/" },
         { id: 27, label: "Case Study Details", href: "/" },
         { id: 28, label: "Comming Soon", href: "/" },
